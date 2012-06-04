@@ -1,0 +1,46 @@
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!--[if IE]><![endif]-->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>express js template</title>
+  <link href="/images/favicon.png" rel="shortcut icon" />
+  <link href="/stylesheets/jqueryui.css" rel="stylesheet" />
+  <link href="/stylesheets/styles.css" rel="stylesheet" />
+
+  <script src="/javascript/json2.js"></script>
+  <script src="/javascript/jquery-1.7.2.min.js" ></script>
+  <script src="/javascript/jquery-ui-1.8.18.custom.min.js"></script>
+  <script src="/javascript/underscore-min.js"></script>
+  <script src="/javascript/ICanHaz.min.js"></script>
+  <script src="/javascript/backbone-min.js"></script>
+  <script src="/javascript/ujs.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!--[if lte IE 7 ]> <body class="ie8 ie7"> <![endif]-->
+    <!--[if IE 8 ]> <body class="ie8"> <![endif]-->
+      <!--[if (gte IE 9)|!(IE)]><!--> 
+        <body> <!--<![endif]-->
+          <div id="wrapper">          
+            <ul class="user-nav">
+        
+              <% if(isAuthenticated){ %>
+                <li><%- link_to('Log Out', '/logout') %></li>
+              <% } else{%>
+                <li>
+                  <%- link_to('Sign In', '/login') %>
+                </li>
+                <li>
+                <%- link_to('Register', '/register') %>
+                </li>
+              <% } %> 
+            </ul>
+        
+            <div id="content" class="clearfix">
+              <%- body %>
+            </div><!-- #content -->
+          </div><!-- #wrapper -->
+        
+        </body>
+</html>

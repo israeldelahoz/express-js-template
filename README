@@ -1,0 +1,13 @@
+this is a template for an application builded on express with the things I use the most:
+
+socket.io
+mongoose
+passport(with a simple local authentication already implemented to go from there, and helpers functions for logged users
+are already builded)
+express-helpers and dynamic helpers are organized on the helpers directory
+
+so just, try this out, to start an express application and tell me what we should add or remove or improve,
+send me a pull request if you would like to
+
+I'm try to upload mor code comments
+

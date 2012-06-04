@@ -1,0 +1,15 @@
+{
+  "development":{
+    "db_path":"mongodb://localhost/express-template",
+    "port": 4568
+  },
+  "production":{
+    "db_path":"automatic",
+    "port": "automatic",
+    "default_admins": ["israel.delahoz@koombea.com", "israeldelahoz@gmail.com"]
+  },
+  "default":{
+    "autosave_interval": 800,
+    "default_admins": ["admin@example.com"]
+  }
+}
