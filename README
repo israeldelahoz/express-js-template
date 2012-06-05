@@ -1,4 +1,4 @@
-this is a template for an application builded on express with the things I use the most:
+this is a template for an application built on express with the things I use the most:
 
 socket.io
 mongoose
@@ -6,8 +6,25 @@ passport(with a simple local authentication already implemented to go from there
 are already builded)
 express-helpers and dynamic helpers are organized on the helpers directory
 
+heroku
+
+it has the necessary files to upload to heroku, you just need to change your app name on
+package.json, add any library you need, and create/push your heroku app
+
+instructions
+
+once you have the application folder, and have installed nodejs, mongodb and npm(you can use nvm to handle node versions)
+enter to the folder on a console and hit "npm install", that will install the necessary dependencies, the you can just
+hit "node web.js", then you can go to http://localhost:4568 on your browser, there is a simple authentication system, so you
+can register into the app.
+
+you can change the name of the db and some basic options on /config/config.json 
+
 so just, try this out, to start an express application and tell me what we should add or remove or improve,
 send me a pull request if you would like to
 
-I'm try to upload mor code comments
+I'm try to upload more code comments.
+
+
+
 
